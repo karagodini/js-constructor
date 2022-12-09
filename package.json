@@ -1,0 +1,27 @@
+{
+  "name": "js-constructor",
+  "version": "1.0.0",
+  "description": "javascript pure application",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 4200",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karagodini/js-constructor.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Ivan <karagodini@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karagodini/js-constructor/issues"
+  },
+  "homepage": "https://github.com/karagodini/js-constructor#readme",
+  "devDependencies": {
+    "parcel": "^2.8.1"
+  }
+}
