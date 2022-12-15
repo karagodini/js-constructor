@@ -1,4 +1,4 @@
-import image from './assets/image.png'
+import image from './assets/index.jpg'
 import { TextBlock, TitleBlock, ColumnsBlock, ImageBlock } from './classes/blocks'
 
 const text = `Крутые приложения на JavaScript`
@@ -8,7 +8,7 @@ export const model = [
         tag: 'h2',
         styles: {
             background: 'linear-gradient(to right, #ff0099, #493240)',
-            color: 'green',
+            color: '#fff',
             'text-align': 'center',
             padding: '1.5rem'
         }}),
@@ -20,7 +20,7 @@ export const model = [
             'justify-content': 'center'
         }, 
         imageStyles: {
-            width: '500px',
+            width: '300px',
             height: 'auto'
         },
         alt: 'Это картинка'

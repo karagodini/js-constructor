@@ -735,8 +735,8 @@ class TextBlock extends Block {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "model", ()=>model);
-var _imagePng = require("./assets/image.png");
-var _imagePngDefault = parcelHelpers.interopDefault(_imagePng);
+var _indexJpg = require("./assets/index.jpg");
+var _indexJpgDefault = parcelHelpers.interopDefault(_indexJpg);
 var _blocks = require("./classes/blocks");
 const text = `Крутые приложения на JavaScript`;
 const model = [
@@ -744,19 +744,19 @@ const model = [
         tag: "h2",
         styles: {
             background: "linear-gradient(to right, #ff0099, #493240)",
-            color: "green",
+            color: "#fff",
             "text-align": "center",
             padding: "1.5rem"
         }
     }),
-    new (0, _blocks.ImageBlock)((0, _imagePngDefault.default), {
+    new (0, _blocks.ImageBlock)((0, _indexJpgDefault.default), {
         styles: {
             padding: "2rem 0",
             display: "flex",
             "justify-content": "center"
         },
         imageStyles: {
-            width: "500px",
+            width: "300px",
             height: "auto"
         },
         alt: "Это картинка"
@@ -782,8 +782,8 @@ const model = [
     })
 ];
 
-},{"./assets/image.png":"ljha9","./classes/blocks":"gMfMj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ljha9":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "image.513edb25.png" + "?" + Date.now();
+},{"./classes/blocks":"gMfMj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./assets/index.jpg":"1MiZ3"}],"1MiZ3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "assets.c710cab4.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
