@@ -1,19 +1,19 @@
 import image from './assets/image.png'
-import { Block } from './classes/blocks'
+import { TextBlock, TitleBlock, ColumnsBlock, ImageBlock } from './classes/blocks'
 
 const text = `Крутые приложения на JavaScript`
 
 export const model = [
-    new Block('title', 'Конструктор сайтов на JS', {
+    new TitleBlock('Конструктор сайтов на JS', {
         tag: 'h2',
         styles: {
             background: 'linear-gradient(to right, #ff0099, #493240)',
-            color: '#FFF',
+            color: 'green',
             'text-align': 'center',
             padding: '1.5rem'
         }}),
 
-    new Block('image', image, {
+    new ImageBlock(image, {
         styles: {
             padding: '2rem 0',
             display: 'flex',
@@ -25,7 +25,7 @@ export const model = [
         },
         alt: 'Это картинка'
     }),
-    new Block('columns', [
+    new ColumnsBlock([
         'Приложение на чистом JS',
         'JavaScript - это просто и интересно',
         'Любые UI своими руками'
@@ -37,7 +37,7 @@ export const model = [
             'font-weight': 'bold'
         }
     }),
-    new Block('text', text, {
+    new TextBlock(text, {
         styles: {
             background: 'linear-gradient(to left, #f2994a, #f2c94c)',
             padding: '1rem',
